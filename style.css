@@ -1,0 +1,19 @@
+/*!
+Theme Name: WordPress Theme Development 
+Theme URI: #
+Author: Nasir Uddin
+Author URI: https://nasir369.netlify.app/
+Description: I am Web developer . We are interested in learning new features of development. We try to learn new technologies very quickly. i am able to work as a developer of any champ. More than a year of efficient website and application coding using React Js Next js, Typescript, CSS, React Router, Tailwind CSS, Bootstrap, JavaScript, Firebase Authentication, Node JS, Express JS, MongoDB, etc. Education : complete Bsc In Computer Science Engineer.
+Version: 1.0.0
+Tested up to: 5.9
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: http://opensource.org/licenses/gpl-2.0.php 
+Text Domain: nasiruddin
+Tags: two-columns, blog, news, right-sidebar, custom-background, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+
+
+*/
+body{
+    background-color: rosybrown;
+}
