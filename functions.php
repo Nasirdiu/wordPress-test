@@ -34,3 +34,25 @@ wp_register_style('bootstrap', get_template_directory_uri().'/css/bootstrap.css'
 
 }
 add_action('wp_enqueue_scripts','nasir_css_js_file_calling');
+
+
+//Theme function
+function nasir_customizar_register($wp_customize){
+    $wp_customize->add_section('nasir_header_area',array(
+        'title'=>__('Header Area','nasiruddin'),
+        'description'=>'If You interested to your update header area,you can do it here'
+    ));
+
+    $wp_customize->add_setting('nasir_logo',array(
+        'default'=>get_bloginfo('template_directory') .'/img/logo.jpg',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'nasir_logo',array(
+        'label'=>'Logo Upload',
+        'description'=>'If You interested to change or update your logo you can do it here',
+        'setting'=>'nasir_logo',
+        'section'=>'nasir_header_area',
+    )));
+}
+
+add_action('customize_register','nasir_customizar_register');
