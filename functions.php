@@ -8,7 +8,7 @@
 
 add_theme_support('title-tag');
 
-//Theme css and jquery file calling 
+//Theme css and jquery file calling ba adding 
 
 function nasir_css_js_file_calling(){
 
@@ -36,7 +36,18 @@ wp_register_style('bootstrap', get_template_directory_uri().'/css/bootstrap.css'
 add_action('wp_enqueue_scripts','nasir_css_js_file_calling');
 
 
-//Theme function
+//google fonts enqueue
+
+function nasir_add_google_fonts(){
+    wp_enqueue_style('nasir_add_google_fonts','https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Oswald&display=swap', false);
+}
+add_action('wp_enqueue_scripts','nasir_add_google_fonts');
+
+
+
+
+//Theme function logo jono
+
 function nasir_customizar_register($wp_customize){
     $wp_customize->add_section('nasir_header_area',array(
         'title'=>__('Header Area','nasiruddin'),
@@ -56,3 +67,7 @@ function nasir_customizar_register($wp_customize){
 }
 
 add_action('customize_register','nasir_customizar_register');
+
+//Menu Register
+
+register_nav_menu( 'main_menu','Main Menu','nasiruddin');
