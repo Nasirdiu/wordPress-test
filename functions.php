@@ -49,6 +49,9 @@ add_action('wp_enqueue_scripts','nasir_add_google_fonts');
 //Theme function logo jono
 
 function nasir_customizar_register($wp_customize){
+
+//header area adding 
+
     $wp_customize->add_section('nasir_header_area',array(
         'title'=>__('Header Area','nasiruddin'),
         'description'=>'If You interested to your update header area,you can do it here'
@@ -64,6 +67,33 @@ function nasir_customizar_register($wp_customize){
         'setting'=>'nasir_logo',
         'section'=>'nasir_header_area',
     )));
+
+    //menu position option
+    $wp_customize->add_section('nasir_menu_option',array(
+        'title'=>__('Menu Position Option','nasiruddin'),
+        'description'=>'If You interested to your update Menu Position ,you can do it here?'
+    ));
+
+    $wp_customize->add_setting('nasir_menu_position',array(
+        'default'=>'right_menu',
+    ));
+
+    $wp_customize->add_control('nasir_menu_position',array(
+        'label'=>'menu_position',
+        'description'=>'selected  your menu position.',
+        'setting'=>'nasir_menu_position',
+        'section'=>'nasir_menu_option',
+        'type'=>'radio',
+        'choices'=>array(
+            'left_menu'=>'Left Menu',
+            'right'=>'Right Menu',
+            'center_menu'=>'center Menu'
+        ),
+        
+
+    ));
+
+
 }
 
 add_action('customize_register','nasir_customizar_register');

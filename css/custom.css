@@ -1,6 +1,6 @@
-/*
+/*=============================
 common css
-*/
+===============================*/
 body {
     font-family: "Kaisei Decol", serif;
   }
@@ -18,9 +18,10 @@ img{
     max-width: 100%;
 }
 
-/*
+/*===========================
 header area style
-*/
+=============================*/
+
 #header_area{
     padding: 15px 0;
 }
@@ -105,3 +106,37 @@ header area style
     background: #ea1a70;
     color: #fff;
   }
+
+  /*=====================================
+  Menu Position
+  =======================================*/
+
+  /* left menu */
+  #header_area.left_menu .col-md-3{
+    order: 2;
+  }
+ 
+  #header_area.left_menu .col-md-9{
+    order: 1;
+  }
+ 
+  #header_area.left_menu .col-md-9 ul{
+    text-align: left;
+  }
+
+  /* center menu */
+ 
+  #header_area.center_menu .col-md-3{
+   width: 100%;
+   text-align: center;
+   margin-bottom: 10px;
+  }
+ 
+  #header_area.center_menu .col-md-9{
+    width: 100%;
+  }
+ 
+  #header_area.center_menu .col-md-9 ul{
+    text-align: center;
+  }
+ 
