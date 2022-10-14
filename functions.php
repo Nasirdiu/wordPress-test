@@ -68,7 +68,7 @@ function nasir_customizar_register($wp_customize){
         'section'=>'nasir_header_area',
     )));
 
-    //menu position option
+//menu position option
     $wp_customize->add_section('nasir_menu_option',array(
         'title'=>__('Menu Position Option','nasiruddin'),
         'description'=>'If You interested to your update Menu Position ,you can do it here?'
@@ -89,10 +89,25 @@ function nasir_customizar_register($wp_customize){
             'right'=>'Right Menu',
             'center_menu'=>'center Menu'
         ),
-        
-
     ));
 
+ //Footer area option
+    $wp_customize->add_section('nasir_footer_option',array(
+        'title'=>__('Footer option','nasiruddin'),
+        'description'=>'If you interested to change or update your footer settings you can do it.'
+    ));
+
+    $wp_customize->add_setting('nasir_copyright_section',array(
+        'default'=>'&copy; Copyright 2022 | Nasir 369',
+    ));
+
+    $wp_customize->add_control('nasir_copyright_section',array(
+        'label'=>'Copyright Text',
+        'description'=>'If need you can update your copyright text from here',
+        'setting'=>'nasir_copyright_section',
+        'section'=>'nasir_footer_option',
+    ));
+    
 
 }
 
@@ -101,3 +116,18 @@ add_action('customize_register','nasir_customizar_register');
 //Menu Register
 
 register_nav_menu( 'main_menu','Main Menu','nasiruddin');
+
+/*========================================================================
+
+//walker Menu Properties update kaj kore na 
+
+function nasir_nav_description($item_output, $item, $args){
+    if( !empty ($item->description)){
+        $item_output = str_replace($args->link_after . '</a>', '<span class="walker_nav">' . $item->description . '</span>' . $args->link_after . '</a>', $item_output);
+      }
+    return $item_output;
+
+}
+add_filter('walker_nav_menu_start_el','nasir_nav_description',10,3);
+
+===============================================================================*/
