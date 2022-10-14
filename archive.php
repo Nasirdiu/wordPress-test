@@ -4,6 +4,8 @@
 */
 
 get_header(); ?>
+
+<h1>This is a archive page</h1>
     <section id="body_area">
         <div class="container">
             <div class="row">
@@ -13,7 +15,6 @@ get_header(); ?>
             </div>
         </div>
     </section>
-
 
 <?php
 /*

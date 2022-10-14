@@ -2,8 +2,9 @@
 /*
 *The main template file......header file calling
 */
-
 get_header(); ?>
+
+<h1>This is a author page</h1>
     <section id="body_area">
         <div class="container">
             <div class="row">
@@ -13,7 +14,6 @@ get_header(); ?>
             </div>
         </div>
     </section>
-
 
 <?php
 /*
