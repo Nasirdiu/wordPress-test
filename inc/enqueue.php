@@ -29,7 +29,7 @@ function nasir_css_js_file_calling(){
     //google fonts enqueue
     
     function nasir_add_google_fonts(){
-        wp_enqueue_style('nasir_add_google_fonts','https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Oswald&display=swap', false);
+        wp_enqueue_style('nasir_add_google_fonts','https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap', false);
     }
     add_action('wp_enqueue_scripts','nasir_add_google_fonts');
     
