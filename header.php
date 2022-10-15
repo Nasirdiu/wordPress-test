@@ -16,15 +16,7 @@
 <body <?php body_class() ?>>
    
     <header id="header_area" class="<?php echo get_theme_mod('nasir_menu_position'); ?>">
-    <div id="notice">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Some Notification</h2>
-                </div>
-            </div>
-        </div>
-    </div>
+    
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
