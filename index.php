@@ -33,8 +33,17 @@ get_header(); ?>
                     e_('No Post Found'); 
                 endif;
                 ?>
+                   <div id="page_nav">
+                    <?php if ('nasir_pagenav'){nasir_pagenav();} else{?>
+
+                        <?php next_posts_link();?>
+                        <?php previous_posts_link();?>
+
+                        <?php }?>
 
                 </div>
+                </div>
+                
                 <div class="col-md-3">
                     <h1>This is side bar area</h1>
                 </div>
