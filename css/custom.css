@@ -185,6 +185,9 @@ header area style
 #body_area .post_details {
   width: 100%;
 }
+#body_area .post_details div {
+  width: 100% !important;
+}
 #body_area .post_details h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -323,4 +326,14 @@ header area style
 #page_nav .page-numbers.current,
 #page_nav .page-numbers:hover {
   background: #262626;
+}
+
+/*===========================================
+  Comment Area Styling
+===========================================*/
+#comments_area h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
 }
