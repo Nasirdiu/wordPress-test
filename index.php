@@ -45,7 +45,7 @@ get_header(); ?>
                 </div>
                 
                 <div class="col-md-3">
-                    <h1>This is side bar area</h1>
+                    <?php get_sidebar(); ?>
                 </div>
             </div>
         </div>
