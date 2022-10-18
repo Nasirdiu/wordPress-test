@@ -16,7 +16,7 @@
                 <?php
                     endwhile;
                 else:
-                    e_('No Post Found'); 
+                    _e('No post found');
                 endif;
                 ?>
                    <div id="page_nav">
