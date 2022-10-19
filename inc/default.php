@@ -10,6 +10,7 @@ add_theme_support('title-tag');
 
 add_theme_support( 'post-thumbnails', array('page','post','service') );
 
+// add_image_size('service', 400, 200, true);
 add_image_size('post-thumbnails', 970, 350, true);
 
 
