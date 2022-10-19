@@ -14,6 +14,9 @@ include_once('inc/enqueue.php');
 
 include_once('inc/theme_function.php');
 
+//custom_post 
+include_once('inc/custom_post.php');
+
 
 //Menu register
 

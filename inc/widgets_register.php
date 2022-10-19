@@ -3,6 +3,7 @@
 //side bar reg function
 
 function nasir_widgets_register(){
+    
     register_sidebar(array(
     'name'=>__('Main widget area','nasiruddin'),
     'id' => 'slider-1',

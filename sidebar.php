@@ -2,10 +2,6 @@
 /*
 *The side bar area.
 */
-
-
-
-
 ?>
 
 
