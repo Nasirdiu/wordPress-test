@@ -20,7 +20,8 @@
                 endif;
                 ?>
                    <div id="page_nav">
-                    <?php if ('nasir_pagenav'){nasir_pagenav();} else{?>
+                    <?php if ('nasir_pagenav'){nasir_pagenav();}
+                     else{?>
 
                         <?php next_posts_link();?>
                         <?php previous_posts_link();?>

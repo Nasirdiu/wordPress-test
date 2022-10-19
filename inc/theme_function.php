@@ -61,10 +61,40 @@ function nasir_customizar_register($wp_customize){
             'setting'=>'nasir_copyright_section',
             'section'=>'nasir_footer_option',
         ));
-        
+// Theme Color
+  $wp_customize-> add_section('nasir_colors', array(
+    'title' => __('Theme Color', 'nasiruddin'),
+    'description' => 'If need you can change your theme color.',
+  ));
+
+  $wp_customize ->add_setting('nasir_bg_color', array(
+    'default' => '#ffffff',
+  ));
+  $wp_customize->add_control( new WP_Customize_color_control($wp_customize, 'nasir_bg_color', array(
+    'label' => 'Background Color',
+    'section' => 'nasir_colors',
+    'settings' => 'nasir_bg_color',
+  )));
+  $wp_customize ->add_setting('nasir_primary_color', array(
+    'default' => '#ea1a70',
+  ));
+  $wp_customize->add_control( new WP_Customize_color_control($wp_customize, 'nasir_primary_color', array(
+    'label' => 'Primary Color',
+    'section' => 'nasir_colors',
+    'settings' => 'nasir_primary_color',
+  )));
+
     
     }
     
     add_action('customize_register','nasir_customizar_register');
-    
-   
+  
+    function nasir_theme_color_cus(){
+        ?>
+        <style>
+          body{background: <?php echo get_theme_mod('nasir_bg_color'); ?>}
+          :root{ --pink:<?php echo get_theme_mod('nasir_primary_color'); ?>}
+        </style>
+        <?php 
+      }
+      add_action('wp_head', 'nasir_theme_color_cus');
