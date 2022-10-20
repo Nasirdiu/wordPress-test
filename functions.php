@@ -26,4 +26,8 @@ include_once('inc/menu_register.php');
 
 include_once('inc/widgets_register.php');
 
+//shortcode register
+
+include_once('inc/shortcode.php');
+
 
