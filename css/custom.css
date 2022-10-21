@@ -54,7 +54,7 @@ input[type="submit"].submit:hover {
   border-radius: 5px;
   display: inline-block;
   text-decoration: none;
-}
+} 
 
 /*===========================
 header area style
@@ -584,4 +584,8 @@ header area style
 #service_area .child_service img {
   width: 100%;
   margin: 0 0 15px;
+}
+.child_sidebar .col-md-4 {
+  width: 100%;
+  margin-bottom: 20px;
 }
