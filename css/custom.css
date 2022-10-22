@@ -255,6 +255,27 @@ header area style
   height: auto;
 }
 /*===========================================
+  Homepage category Styling
+===========================================*/
+#homepage_post .child_home ul {
+  text-align: center;
+}
+#homepage_post .child_home ul li {
+  display: inline-block;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px #ddd;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+#homepage_post .child_home ul li a {
+  font-size: 25px;
+  color: #262626;
+  display: block;
+  margin: 15px 0;
+  text-decoration: none;
+}
+/*===========================================
   404 Area Styling
 ===========================================*/
 .error_page {
