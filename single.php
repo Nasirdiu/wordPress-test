@@ -12,7 +12,7 @@ get_header(); ?>
 
                 <div id="comments_area">
                     <?php if(comments_open()):?>
-              <?php comments_template(); ?>
+                    <?php comments_template(); ?>
               <?php endif?>
             </div>
                 </div>          
@@ -22,7 +22,6 @@ get_header(); ?>
             </div>
         </div>
     </section>
-
-
+   
 <?php
 get_footer(); ?>
