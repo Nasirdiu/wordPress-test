@@ -212,6 +212,10 @@ header area style
 #body_area .post_details {
   width: 100%;
 }
+#body_area .post_details p span{
+  display: inline-block;
+  margin: 0 5px;
+}
 #body_area .post_details div {
   width: 100% !important;
 }
