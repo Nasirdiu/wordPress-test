@@ -245,6 +245,16 @@ header area style
   margin-bottom: 0;
 }
 /*===========================================
+  Slider Area Styling
+===========================================*/
+#slider_area{
+  margin: 25px 0;
+}
+#slider_area img{
+  width: 100%;
+  height: auto;
+}
+/*===========================================
   404 Area Styling
 ===========================================*/
 .error_page {
