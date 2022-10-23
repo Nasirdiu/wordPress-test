@@ -45,3 +45,8 @@ function nasir_css_js_file_calling(){
     }
     add_action('wp_enqueue_scripts','nasir_add_google_fonts');
     
+  // Desicon Not Showing fixing
+function deshicon_load_issue(){
+    wp_enqueue_style('dashicons');
+  }
+  add_action('wp_enqueue_scripts', 'deshicon_load_issue');  
