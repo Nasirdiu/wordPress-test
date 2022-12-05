@@ -55,7 +55,9 @@ input[type="submit"].submit:hover {
   display: inline-block;
   text-decoration: none;
 } 
-
+.slicknav_menu{
+  display: none;
+}
 /*===========================
 header area style
 =============================*/
